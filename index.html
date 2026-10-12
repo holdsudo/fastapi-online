@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>404 Not Found</title>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<main class="nf">
+  <h1><button type="button" id="code" class="code" aria-label="404">404</button></h1>
+  <p class="nf-title">Page Not Found</p>
+  <p class="nf-text">The page you requested could not be found. It may have been moved, renamed, or is temporarily unavailable.</p>
+  <p class="nf-text"><a href="/">Return to homepage</a></p>
+</main>
+
+<footer class="ft">
+  <form class="optin" id="optin" novalidate>
+    <p class="ft-h">Stay in touch</p>
+    <div class="row">
+      <label>Full name<input name="name" type="text" autocomplete="name" required></label>
+      <label>Mobile number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555" required></label>
+    </div>
+    <label class="chk"><input type="checkbox" name="sms_consent" value="yes">
+      <span>By checking this box, I agree to receive recurring text messages from <b>[BUSINESS NAME]</b> at the mobile number provided, including [account notifications, appointment reminders, customer care, and marketing messages]. Consent is not a condition of any purchase. Message frequency varies. Message &amp; data rates may apply. Reply <b>STOP</b> to opt out, <b>HELP</b> for help. See our <a href="/privacy/">Privacy Policy</a> and <a href="/sms-terms/">SMS Terms</a>.</span></label>
+    <label class="chk"><input type="checkbox" name="terms_consent" value="yes" required>
+      <span>I have read and agree to the <a href="/terms/">Terms of Service</a> and <a href="/privacy/">Privacy Policy</a>.</span></label>
+    <button type="submit">Submit</button>
+    <p class="fine" id="optin-msg" role="status" aria-live="polite"></p>
+    <p class="fine">No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Text messaging originator opt-in data and consent will not be shared with any third parties.</p>
+  </form>
+
+  <nav class="links" aria-label="Legal">
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/terms/">Terms of Service</a>
+    <a href="/sms-terms/">SMS Terms</a>
+    <a href="/privacy/#cookies">Cookie Policy</a>
+    <a href="/privacy/#do-not-sell">Do Not Sell or Share My Personal Information</a>
+    <a href="/accessibility/">Accessibility</a>
+    <a href="mailto:[CONTACT EMAIL]">Contact</a>
+  </nav>
+  <p class="fine">[BUSINESS NAME] · [STREET ADDRESS], [CITY], [STATE] [ZIP] · [PHONE] · [CONTACT EMAIL]</p>
+  <p class="fine">This site uses only essential cookies required for it to function. We do not sell personal information. We honor Global Privacy Control (GPC) signals.</p>
+  <p class="fine">&copy; <span id="yr">2026</span> [BUSINESS NAME]. All rights reserved.</p>
+</footer>
+
+<dialog id="login" class="dlg">
+  <form id="login-form" method="dialog">
+    <p class="dlg-h">Sign in</p>
+    <label>Username<input name="u" type="text" autocomplete="username"></label>
+    <label>Password<input name="p" type="password" autocomplete="current-password" required></label>
+    <p class="err" id="login-err" role="alert"></p>
+    <div class="dlg-act">
+      <button type="button" class="ghost" id="login-cancel">Cancel</button>
+      <button type="submit" id="login-go">Sign in</button>
+    </div>
+  </form>
+</dialog>
+
+<section id="dash" class="dash" hidden></section>
+
+<script src="/assets/config.js"></script>
+<script src="/assets/vault.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
